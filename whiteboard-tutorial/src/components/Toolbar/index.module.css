@@ -1,0 +1,17 @@
+.container {
+  @apply absolute left-1/2 top-5 px-3 py-2 flex rounded border border-gray-400;
+  transform: translateX(-50%);
+  box-shadow: 1px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.toolItem {
+  @apply flex justify-center items-center text-xl p-3 text-black mr-5 last:mr-0 cursor-pointer;
+}
+
+.toolItem:hover {
+  @apply bg-blue-50 text-gray-700 rounded;
+}
+
+.toolItem.active {
+  @apply bg-blue-200 text-gray-700 rounded;
+}
